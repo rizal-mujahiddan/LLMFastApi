@@ -1,7 +1,9 @@
-backend_fastapi/__pycache__/*
+# Backend
+backend_fastapi/__pycache__
+backend_fastapi/backend.log
 # running.sh
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# FrontEnd
 # dependencies
 frontend_react/node_modules
 frontend_react/.pnp
@@ -24,3 +26,4 @@ frontend_react/npm-debug.log*
 frontend_react/yarn-debug.log*
 frontend_react/yarn-error.log*
 frontend_react/.env
+frontend_react/frontend.log
