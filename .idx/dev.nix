@@ -2,7 +2,7 @@
 # see: https://developers.google.com/idx/guides/customize-idx-env
 { pkgs, ... }: {
   # Which nixpkgs channel to use.
-  channel = "stable-24.05"; # or "unstable"
+  channel = "stable-24.11"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
       pkgs.python312
@@ -11,7 +11,7 @@
       pkgs.poetry
       pkgs.yarn
       pkgs.nodePackages.nodemon
-      
+      pkgs.sudo
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -19,6 +19,7 @@
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
       # "vscodevim.vim"
+      github.vscode-pull-request-github
     ];
     # Enable previews
     previews = {
