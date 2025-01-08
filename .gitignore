@@ -1,6 +1,9 @@
 # Backend
 backend_fastapi/__pycache__
 backend_fastapi/backend.log
+backend_fastapi/.env
+*/*/__pycache__
+backend.log
 # running.sh
 
 # FrontEnd
@@ -8,6 +11,9 @@ backend_fastapi/backend.log
 frontend_react/node_modules
 frontend_react/.pnp
 frontend_react/.pnp.js
+frontend_react/public/env.js
+frontend_react/.yarn
+frontend.log
 
 # testing
 frontend_react/coverage

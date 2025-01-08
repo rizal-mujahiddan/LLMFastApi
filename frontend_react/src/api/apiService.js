@@ -1,13 +1,20 @@
-const apiURL = process.env.WEBSITE_BACKEND; // Replace port
+import env from 'react-dotenv';
+
+const apiURL = env.WEBSITE_BACKEND; // Replace port
+console.log(apiURL);
 
 export const sendMessage = async (message) => {
     try {
+      const requestBody = {
+        message: message
+      };
+
       const response = await fetch(apiURL, {
-        method: 'GET',
-        // headers: {
-        //   'Content-Type': 'application/json',
-        // },
-        // body: JSON.stringify({ message }),
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody),
       });
   
       if (!response.ok) {
